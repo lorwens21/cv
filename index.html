@@ -17,6 +17,7 @@
             <li><a href="#myalmamaters">Almamaters</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#social_media">Social Media</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contactme">Contact Me</a></li>
         </ul>
     </div>
@@ -25,7 +26,7 @@
                 <tbody>
                     <tr>
                         <td>
-                        <img class="profil-picture" src="profil pic _ remake.png" alt="profil_picture" width="350">
+                        <img class="profil-picture" src="profil pic _ remake.png" alt="profil_picture" width="300">
                         </td>
                         <td>
                             <h1 class="my-name">Brillian Abraham Lorwens</h1>
@@ -142,31 +143,38 @@
         </div>
     </section>
     <hr>
+    <section id="gallery">
+        <div class="gallery">
+            <h1>Gallery</h1>
+            <img src="img/img-1.jpg" width ="400" alt="pemandangan" id="pemandangan">
+            <button onclick= "(changePicture());">Change Picture</button>
+        </div>
+    </section>
     <section id="contactme">
         <div class=" contactme">
         <h1>Contact Me</h1>
         <form action=""></form>
         <div class="input_icon"> 
-          <input type="text" placeholder="Your Name">
+          <input id="username" class="input-user" type="text" placeholder="Your Name">
           <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
         </div>
         
         <div class="input_icon">
-        <input type="text"  placeholder="Email">
+        <input id="email" class="input-email" type="text"  placeholder="Email">
         <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
         </div>
 
         <div class="input_icon">
-            <input type="text" placeholder="Phone Number">
+            <input id="phone-number" class="input-phone-number" type="text" placeholder="Phone Number">
             <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
         </div>
         <div class="input_icon">
-        <button>Submit</button>
+        <button onclick="(getUserName(), getEmail(), getPhoneNumber());">Submit</button>
         </div>
     
     </section>
     <hr>
 
-
+<script src="script.js"></script>
 </body>
 </html>
